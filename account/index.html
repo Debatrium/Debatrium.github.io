@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="follow,index">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup - Debatrium</title>
+    <meta name="description" content="Login/Signup">
+    <meta name="keywords" content="login page, Debatrium, forum, reddit">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#5f6368">
+    <meta name="theme-color" content="#5f6368">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+html {
+  font-size: 14px;
+  word-spacing: 1px;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  background-color: #2d2d30;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  color: #76abf1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo-wrapper {
+  text-align: center;
+  margin: 4em 0 1em;
+}
+
+.content-body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2d2d30;
+}
+
+.heading,
+.sub-heading {
+  font-weight: 600;
+  color: #202124;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.btn.secondary {
+  color: #fff;
+  background-color: #1b73e8;
+}
+
+.btn.primary {
+  color: #fff;
+  background-color: #1b73e8;
+}
+
+.form-wrapper {
+  width: 448px;
+  min-height: 500px;
+  margin: 0 auto;
+  background-color: #3e3e42;
+  padding: 48px 40px 36px;
+}
+
+.form-wrapper .logo img {
+  width: 75px;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-wrapper .heading {
+  padding-top: 16px;
+}
+
+.form-wrapper .sub-heading {
+  padding-top: 8px;
+}
+
+.form-wrapper form {
+  padding: 24px 0 0;
+}
+
+.field {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 13px 15px;
+  border-radius: 3px;
+  line-height: 24px;
+  border: #dbdce0 solid 1px;
+  font-size: 16px;
+  position: relative;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2px #1b73e8 inset;
+  outline: none;
+  transition: 100ms;
+}
+
+.label {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: 0%;
+  transition: transform 100ms, left 100ms;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.field:focus-within .label,
+.input:not(:placeholder-shown) + .label {
+  transform: scale(0.8) translateY(-43px);
+  left: 12px;
+  background-color: #fff;
+  color: #1b73e8;
+  padding: 1px 5px;
+}
+
+.description-text {
+  margin-top: 32px;
+  padding: 9px 0 3px;
+}
+
+.form-action {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-action .btn.secondary {
+  padding-left: 12px;
+}
+
+/* For Mobile View */
+@media (width <= 520px) {
+  .form-wrapper {
+    border: none;
+    padding: 48px 20px 36px;
+  }
+}
+</style>
+  </head>
+
+  <body>
+    <div class="content-body">
+      <div class="form-wrapper">
+        <div class="logo">
+          <img src="logo.jpg" alt="Logo" style="width:128px; height:128px;">
+        </div>
+        <h1 class="heading text-center" style="color: #fff;">Debatrium</h1>
+        <h3 class="sub-heading text-center" style="color: #fff;">Login or Signup</h3>
+
+ 
+
+          <div class="description-text" style="color: #fff;">
+            <p>
+              Debatrium uses Github Discussions and with that when using Debatrium you are technically using Github Discussions and having an account on Github (not with us). When you click login or signup, Debatrium will forward you to a Github login page that will redirect you to Debatrium afer login. 
+              <br><br>
+              Already logged in with Github? <a href="https://github.com/Debatrium/Debatrium/discussions">Click here</a> to proceed on the forum area of Debatrium.
+            </p>
+          </div>
+
+          <div class="form-action">
+            <a href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FDebatrium%2FDebatrium%2Fdiscussions" class="btn secondary">Login</a>
+            <a href="https://github.com/signup?return_to=https%3A%2F%2Fgithub.com%2FDebatrium%2FDebatrium%2Fdiscussions" class="btn primary">Signup</a>
+          </div>
+     <br><br>
+     <footer style="text-align: center; color: #fff;">
+     &#169;Debatrium Organization. All Rights Reserved.
+     </footer>
+      </div>
+
+    </div>
+
+
+   
+  </body>
+</html>
